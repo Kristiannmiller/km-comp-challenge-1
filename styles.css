@@ -1,0 +1,125 @@
+#original-design {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 50%;
+  z-index: 3;
+}
+
+header {
+  height: 149px;
+  background-color: #14110f;
+}
+.container {
+  width: 90%
+  margin: 0 auto;
+}
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  height: 149px;
+  line-height: 70px;
+}
+.logo {
+  width: 10%;
+  height: auto;
+  float: right;
+}
+
+.menu {
+  float: left;
+  margin-top: 65px;
+  margin-left: 20px;
+}
+
+.menu li {
+  float: right;
+  width: 120px;
+  height: 70px
+  line-height: 70px;
+  text-align: center;
+  list-style: none;
+}
+.menu li a {
+  text-decoration: none;
+  font-family: avenir;
+  text-transform: uppercase;
+  color: #f8f8f8
+
+}
+.account {
+  padding: 40px;
+  float: right;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+main {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
+  grid-template-areas:
+    "card-1 card-2 card-3 card-4"
+    "card-5 card-6 card-7 card-8";
+}
+.card-1 {
+  background-color: blue;
+  grid-area: card-1;
+  height: 400px;
+}
+.card-2 {
+  background-color: green;
+  grid-area: card-2;
+  height: 400px;
+}
+.card-3 {
+  background-color: yellow;
+  grid-area: card-3;
+  height: 400px;
+}
+.card-4 {
+  background-color: red;
+  grid-area: card-4;
+  height: 400px;
+}
+.card-5 {
+  background-color: purple;
+  grid-area: card-5;
+  height: 400px;
+}
+.card-6 {
+  background-color: pink;
+  grid-area: card-6;
+  height: 400px;
+}
+.card-7 {
+  background-color: black;
+  grid-area: card-7;
+  height: 400px;
+}
+.card-8 {
+  background-color: cornflowerblue;
+  grid-area: card-8;
+  height: 400px;
+}
+@media screen and (max-width: 450px) {
+  main {
+    grid-template-areas:
+      "card-1"
+      "card-2"
+      "card-3"
+      "card-4"
+      "card-5"
+      "card-6"
+      "card-7"
+      "card-8";
+    grid-template-columns: 1fr;
+  }
+}
