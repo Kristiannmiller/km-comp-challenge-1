@@ -97,6 +97,7 @@ main {
   height: 400px;
   width: 275px;
 }
+
 .card-2 {
   background-color: green;
   grid-area: card-2;
