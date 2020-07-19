@@ -32,20 +32,40 @@ header {
 }
 
 .nav-1 {
+  margin: 20px;
+  width: 100%;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
   grid-column: span 5;
   grid-area: nav-1;
 }
 
 .nav-2 {
+  width: 100%;
+  margin-top: 10%;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
   grid-column: span 1;
   grid-area: nav-2;
 }
 
 .nav-3 {
+  width: 100%;
+  margin-top: 10%;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
   grid-column: span 1;
   grid-area: nav-3;
 }
 .nav-4 {
+  width: 100%;
+  margin-top: 10%;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
   grid-column: span 1;
   grid-area: nav-4;
 }
@@ -75,7 +95,7 @@ header {
 }
 
 .username {
-  margin: 18px 55px 20px 20px;
+  margin-bottom: 0;
   float: right;
   text-decoration: none;
   font-family: avenir;
@@ -84,11 +104,11 @@ header {
   grid-area: user;
 }
 
-.logo {
+.main-logo {
   margin-right: 20px;
   margin-bottom: 70px;
-  padding: 15;
-  height: 100px;
+  padding: 0;
+  height: 75px;
   float: right;
   grid-area: logo;
   opacity: 75%;
@@ -167,6 +187,17 @@ h1 {
   color: #f28123;
 }
 
+h2 {
+  padding: 0;
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-decoration: none;
+  font-family: avenir;
+  font-size: 16pt;
+  color: #f28123;
+}
+
 p {
   margin: 10px;
   margin-top: 0px;
@@ -177,18 +208,65 @@ p {
   color: #14110f;
 }
 
+p1 {
+  margin-left: 10px;
+  margin-bottom: 1px;
+  padding: 0;
+  text-decoration: none;
+  font-family: avenir;
+  text-transform: uppercase;
+  font-size: 10pt;
+  color: #14110f;
+}
+
+/* .link-section {
+  text-align: center;
+  vertical-align: middle;
+} */
+
 .linkbox {
   padding: 0;
-  width: 15em;
-  height: 3em;
+  width: 100%;
+  height: 2em;
   background-color: #847e89;
   position: center;
   margin: center;
-  margin: 2px 20px 20px 30px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #14110f;
   text-align: center;
   font-family: avenir;
-  vertical-align: middle;
   display: inline-block;
+  line-height: 2em;
+}
+
+.spotify-link-container {
+  width: 100%;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+}
+
+.spotify-logo {
+  width: 18px;
+  margin-right: 5px;
+  padding: 0;
+  font-family: avenir;
+  font-size: 16pt;
+  text-decoration: none;
+  color: #f28123;
+
+}
+
+.spotify-link {
+  padding: 0;
+  font-family: avenir;
+  /* text-transform: uppercase; */
+  font-size: 16pt;
+  text-decoration: none;
+  color: #f28123;
+  line-height: 20px;
+  align-items: baseline;
 }
 
 .card-1-container {
@@ -343,7 +421,77 @@ p {
   width: auto;
   overflow: hidden;
 }
+
 @media screen and (max-width: 450px) {
+
+  .nav-1 {
+    margin-top: 5px;
+    width: 75px;
+    display: inline-block;
+    height: auto;
+    float: left;
+    grid-column: span 1;
+    grid-area: nav-1;
+  }
+
+  .main-logo {
+    margin-right: 0px;
+    margin-bottom: 0;
+    padding: 0;
+    height: 50px;
+    width: auto;
+    float: none;
+    opacity: 75%;
+  }
+
+  .nav-2 {
+    width: 100%;
+    margin-top: 0;
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    grid-column: span 1;
+    grid-area: nav-2;
+  }
+
+  .nav-3 {
+    width: 100%;
+    margin-top: 0;
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    grid-column: span 1;
+    grid-area: nav-3;
+  }
+  .nav-4 {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    grid-area: nav-4;
+  }
+  #navmenu {
+    margin: 10px;
+    text-decoration: none;
+    font-family: avenir;
+    text-transform: uppercase;
+    font-size: 10pt;
+    color: #f8f8f8;
+  }
+
+  header {
+    width: 100%;
+    overflow: hidden;
+    height: 130px;
+    background-color: #14110f;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "nav-1 nav-5"
+      "nav-2 nav-3"
+      "nav-4 nav-4"
+  }
+
+
   .main-container {
     grid-gap: 5px;
     padding: 2;

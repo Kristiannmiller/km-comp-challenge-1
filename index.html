@@ -10,20 +10,22 @@
 <body>
   <div id="original-design"><img src="./assets/Static-Comp-1-Original-Design.jpg" alt=""></div>
   <header>
-    <div class="nav-1">
+    <container class="nav-1">
+      <a class="username" href="AccountPage"><img class="spotify-logo" src="./assets/account.png" alt="Admin Username">Admin Username</a>
+    </container>
       <a class="username">Admin Username</a>
     </div>
-    <div class="nav-2">
-      <div id="navmenu">Share</div>
-    </div>
+    <container class="nav-2">
+      <a id="navmenu" href="SharePage"><img class="spotify-logo" src="./assets/share.png" alt="social media link">Share</a>
+    </container>
     <div class="nav-3">
-        <div id="navmenu">Artists</div>
+      <a id="navmenu" href="ArtistPage"><img class="spotify-logo" src="./assets/Menu.png" alt="drop down menu for artists">Artists</a>
     </div>
     <div class="nav-4">
-        <div id="navmenu">Articles</div>
+      <a id="navmenu" href="ArticleCollection"><img class="spotify-logo" src="./assets/Menu.png" alt="drop down menu for articles">Articles</a>
     </div>
     <div class="nav-5">
-      <img src="./assets/smallwhitelogo.png" alt="Kamera Photojournalism Logo" class="logo">
+      <img src="./assets/smallwhitelogo.png" alt="Kamera Photojournalism Logo" class="main-logo">
     </div>
   </header>
   <main>
@@ -32,105 +34,169 @@
       <container class="card-1-container">
         <div class="card">
           <section class="band-img-container">
-            <a><img class="band-img" src="./assets/X.jpg" alt="X the band live at the Marque Denver"></a>
+            <a><img class="band-img" src="./assets/X.jpg" alt="X the band live at the Marquis Denver"></a>
             <a><img class="arrow" src="./assets/TwirlyArrow.png" alt=""></a>
-            <a class="date">June</a>
-            <a class="date-year">17</a>
+            <a class="date">April</a>
+            <a class="date-year">15</a>
           </section>
           <h1>X / John Doe</h1>
-          <p>The Marque, Denver, CO</p>
-          <box class="linkbox">link to article</box>
+          <p>The Marquis :: Denver, CO</p>
+          <a class="linkbox" href="article-1">link to article</a>
+          <p>Setlist Playlist:</p>
+          <container class="spotify-link-container">
+            <a class="spotify-logo" href="SpotifyPlaylist1"><img class="spotify-logo" src="./assets/spotifyicon.png" alt="Spotify Icon Logo">Feed Your Ears</a>
+          </container>
+          <section>
+            <p1>Rating:</p1>
+            <h2>5.0</h2>
+          </section>
         </div>
       </container>
       <container class="card-2-container">
         <div class="card">
           <section class="band-img-container">
-            <a><img class="band-img" src="./assets/DrDog.jpg" alt="DrDog live at the Meadowlark Denver"></a>
+            <a><img class="band-img" src="./assets/OKGO.jpg" alt="OK GO live at the Ogden in Denver"></a>
             <a><img class="arrow" src="./assets/TwirlyArrow.png" alt=""></a>
-            <a class="date">Aug</a>
-            <a class="date-year">19</a>
+            <a class="date">April</a>
+            <a class="date-year">15</a>
           </section>
-          <h1 class="bandinfo">Dr Dog</h1>
-          <p class="venue">The Meadowlark, Denver, CO</p>
-          <box class="linkbox">link to article</box>
+          <h1>OK GO</h1>
+          <p>The Ogden :: Denver, CO</p>
+          <a class="linkbox" href="article-2">link to article</a>
+          <p>Setlist Playlist:</p>
+          <container class="spotify-link-container">
+            <a class="spotify-logo" href="SpotifyPlaylist2"><img class="spotify-logo" src="./assets/spotifyicon.png" alt="Spotify Icon Logo">Feed Your Ears</a>
+          </container>
+          <section>
+            <p1>Rating:</p1>
+            <h2>4.7</h2>
+          </section>
         </div>
       </container>
       <container class="card-3-container">
         <div class="card">
           <section class="band-img-container">
-            <a><img class="band-img" src="./assets/Langhorne.jpg" alt="Langhorne Slim live at the Filmore Denver"></a>
+            <a><img class="band-img" src="./assets/SleaterKinney.jpg" alt="Sleater Kinney live at the Ogden Denver"></a>
             <a><img class="arrow" src="./assets/TwirlyArrow.png" alt=""></a>
-            <a class="date">July</a>
+            <a class="date">Feb</a>
             <a class="date-year">15</a>
           </section>
-          <h1 class="bandinfo">Langhorne Slim</h1>
-          <p class="venue">The Filmore, Denver, CO</p>
-          <box class="linkbox">link to article</box>
+          <h1>Sleater Kinney</h1>
+          <p>The Ogden :: Denver, CO</p>
+          <a class="linkbox" href="article-3">link to article</a>
+          <p>Setlist Playlist:</p>
+          <container class="spotify-link-container">
+            <a class="spotify-logo" href="SpotifyPlaylist3"><img class="spotify-logo" src="./assets/spotifyicon.png" alt="Spotify Icon Logo">Feed Your Ears</a>
+          </container>
+          <section>
+            <p1>Rating:</p1>
+            <h2>5.0</h2>
+          </section>
         </div>
       </container>
       <container class="card-4-container">
         <div class="card">
           <section class="band-img-container">
-            <a><img class="band-img" src="./assets/Lizzo.jpg" alt="Lizzo live at the Fox"></a>
+            <a><img class="band-img" src="./assets/Lizzo.jpg" alt="Lizzo live at the Filmore Denver"></a>
             <a><img class="arrow" src="./assets/TwirlyArrow.png" alt=""></a>
-            <a class="date">July</a>
-            <a class="date-year">14</a>
+            <a class="date">Oct</a>
+            <a class="date-year">19</a>
           </section>
-          <h1 class="bandinfo">Lizzo</h1>
-          <p class="venue">The Fox, Boulder, CO</p>
-          <box class="linkbox">link to article</box>
+          <h1>Lizzo</h1>
+          <p>The Filmore :: Denver, CO</p>
+          <a class="linkbox" href="article-4">link to article</a>
+          <p>Setlist Playlist:</p>
+          <container class="spotify-link-container">
+            <a class="spotify-logo" href="SpotifyPlaylist4"><img class="spotify-logo" src="./assets/spotifyicon.png" alt="Spotify Icon Logo">Feed Your Ears</a>
+          </container>
+          <section>
+            <p1>Rating:</p1>
+            <h2>5.0</h2>
+          </section>
         </div>
       </container>
       <container class="card-5-container">
         <div class="card">
           <section class="band-img-container">
-            <a><img class="band-img" src="./assets/Lumineers.jpg" alt="Lumineers live at Red Rocks"></a>
+            <a><img class="band-img" src="./assets/DrDog.jpg" alt="Dr Dog live at Red Rocks"></a>
             <a><img class="arrow" src="./assets/TwirlyArrow.png" alt=""></a>
-            <a class="date">Sept</a>
-            <a class="date-year">15</a>
+            <a class="date">Aug</a>
+            <a class="date-year">19</a>
           </section>
-          <h1 class="bandinfo">The Lumineers</h1>
-          <p class="venue">Red Rocks, Morrison, CO</p>
-          <box class="linkbox">link to article</box>
+          <h1>Dr Dog</h1>
+          <p>Red Rocks :: Morrison, CO</p>
+          <a class="linkbox" href="article-5">link to article</a>
+          <p>Setlist Playlist:</p>
+          <container class="spotify-link-container">
+            <a class="spotify-logo" href="SpotifyPlaylist5"><img class="spotify-logo" src="./assets/spotifyicon.png" alt="Spotify Icon Logo">Feed Your Ears</a>
+          </container>
+          <section>
+            <p1>Rating:</p1>
+            <h2>4.2</h2>
+          </section>
         </div>
       </container>
       <container class="card-6-container">
         <div class="card">
           <section class="band-img-container">
-            <a><img class="band-img" src="./assets/SleaterKinney.jpg" alt="Sleater Kinney live at The Filmore"></a>
+            <a><img class="band-img" src="./assets/Langhorne.jpg" alt="Langhorne Slim live at The Bluebird Denver"></a>
             <a><img class="arrow" src="./assets/TwirlyArrow.png" alt=""></a>
-            <a class="date">Dec</a>
-            <a class="date-year">18</a>
+            <a class="date">Aug</a>
+            <a class="date-year">17</a>
           </section>
-          <h1 class="bandinfo">Sleater Kinney</h1>
-          <p class="venue">The Filmore, Denver, CO</p>
-          <box class="linkbox">link to article</box>
+          <h1>Langhorne Slim</h1>
+          <p>The Bluebird :: Denver, CO</p>
+          <a class="linkbox" href="article-6">link to article</a>
+          <p>Setlist Playlist:</p>
+          <container class="spotify-link-container">
+            <a class="spotify-logo" href="SpotifyPlaylist6"><img class="spotify-logo" src="./assets/spotifyicon.png" alt="Spotify Icon Logo">Feed Your Ears</a>
+          </container>
+          <section>
+            <p1>Rating:</p1>
+            <h2>4.9</h2>
+          </section>
         </div>
       </container>
       <container class="card-7-container">
         <div class="card">
           <section class="band-img-container">
-            <a><img class="band-img" src="./assets/OKGO.jpg" alt="OK GO live at The Fox"></a>
+            <a><img class="band-img" src="./assets/PunchBrothers.jpg" alt="Punch Brothers live at The Ogden"></a>
             <a><img class="arrow" src="./assets/TwirlyArrow.png" alt=""></a>
-            <a class="date">Nov</a>
-            <a class="date-year">17</a>
+            <a class="date">April</a>
+            <a class="date-year">15</a>
           </section>
-          <h1 class="bandinfo">OK GO</h1>
-          <p class="venue">The Fox, Denver, CO</p>
-          <box class="linkbox">link to article</box>
+          <h1>Punch Brothers</h1>
+          <p>The Ogden :: Denver, CO</p>
+          <a class="linkbox" href="article-7">link to article</a>
+          <p>Setlist Playlist:</p>
+          <container class="spotify-link-container">
+            <a class="spotify-logo" href="SpotifyPlaylist7"><img class="spotify-logo" src="./assets/spotifyicon.png" alt="Spotify Icon Logo">Feed Your Ears</a>
+          </container>
+          <section>
+            <p1>Rating:</p1>
+            <h2>4.9</h2>
+          </section>
         </div>
       </container>
       <container class="card-8-container">
         <div class="card">
           <section class="band-img-container">
-            <a><img class="band-img" src="./assets/BlitzenTrapper.jpg" alt="Blitzen Trapper live at The Fox"></a>
+            <a><img class="band-img" src="./assets/BlitzenTrapper.jpg" alt="Blitzen Trapper live at The Bluebird Denver"></a>
             <a><img class="arrow" src="./assets/TwirlyArrow.png" alt=""></a>
             <a class="date">Oct</a>
-            <a class="date-year">19</a>
+            <a class="date-year">16</a>
           </section>
-          <h1 class="bandinfo">Blitzen Trapper</h1>
-          <p class="venue">The Fox, Denver, CO</p>
-          <box class="linkbox">link to article</box>
+          <h1>Blitzen Trapper</h1>
+          <p>The Bluebird :: Denver, CO</p>
+          <a class="linkbox" href="article-8">link to article</a>
+          <p>Setlist Playlist:</p>
+          <container class="spotify-link-container">
+            <a class="spotify-logo" href="SpotifyPlaylist8"><img class="spotify-logo" src="./assets/spotifyicon.png" alt="Spotify Icon Logo">Feed Your Ears</a>
+          </container>
+          <section>
+            <p1>Rating:</p1>
+            <h2>4.0</h2>
+          </section>
         </div>
       </container>
     </container>
