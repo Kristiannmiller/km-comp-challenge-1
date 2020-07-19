@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #f8f8f8;
 }
 
 #original-design {
@@ -92,24 +93,64 @@ header {
   grid-area: logo;
   opacity: 75%;
 }
-
 main {
+  width: auto;
   background-color: #f8f8f8;
-  margin: 20px 20px 20px 20px;
+}
+
+.main-container {
+  margin: 15px 15px 15px 15px;
   display: grid;
-  grid-template-rows: auto;
+  width: 95%;
+  height: 955px;
+  grid-template-rows: 10% 1fr 1fr;
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 10px;
-  position: center;
   grid-template-areas:
     "text text text text"
     "card-1 card-2 card-3 card-4"
     "card-5 card-6 card-7 card-8";
 }
-.band-img-1 {
-  height: 210px;
-  grid-area: band1img;
+
+.band-img-container {
+  position: relative;
+  grid-area: bandimg1;
   opacity: 75%;
+}
+
+.arrow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: auto;
+  opacity: 75%;
+  z-index: 0;
+  background-color: white;
+  border-style: solid;
+  border-radius: 360%;
+  border-color: white;
+}
+
+.date {
+  color: #f8f8f8;
+  font-family: avenir;
+  position: absolute;
+  top: 5px;
+  left: 225px;
+}
+
+.date-year {
+  color: #f8f8f8;
+  font-family: avenir;
+  position: absolute;
+  left: 225px;
+  top: 18px;
+  font-size: 20pt;
+}
+
+.band-img {
+  height: 200px;
 }
 
 .bandinfo {
@@ -119,6 +160,7 @@ main {
   font-family: avenir;
   font-size: 20pt;
   color: #f28123;
+  grid-area: bandinfo1;
 }
 
 .venue {
@@ -137,74 +179,151 @@ main {
   background-color: #847e89;
   position: center;
   margin: center;
-  /* margin: 2px 20px 20px 30px; */
+  margin: 2px 20px 20px 30px;
   text-align: center;
   font-family: avenir;
   vertical-align: middle;
   display: inline-block;
 }
 
-.card-1 {
-  justify-content: center;
+.card-1-container {
+  padding: 5;
+  grid-area: card-1;
+  display: grid;
+  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-template-areas:
+    "bandimg1"
+    "bandinfo1"
+    "venue"
+    "linkbox"
+    "spotify"
+    "rating-label"
+    "rating";
+}
+
+.card-2-container {
+  padding: 5;
+  grid-area: card-2;
+  display: grid;
+  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-template-areas:
+    "bandimg2"
+    "bandinfo1"
+    "venue"
+    "linkbox"
+    "spotify"
+    "rating-label"
+    "rating";
+}
+
+.card-3-container {
+  padding: 5;
+  grid-area: card-3;
+  display: grid;
+  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-template-areas:
+    "bandimg2"
+    "bandinfo1"
+    "venue"
+    "linkbox"
+    "spotify"
+    "rating-label"
+    "rating";
+}
+
+.card-4-container {
+  padding: 5;
+  grid-area: card-4;
+  display: grid;
+  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-template-areas:
+    "bandimg1"
+    "bandinfo1"
+    "venue"
+    "linkbox"
+    "spotify"
+    "rating-label"
+    "rating";
+}
+
+.card-5-container {
+  padding: 5;
+  grid-area: card-5;
+  display: grid;
+  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-template-areas:
+    "bandimg2"
+    "bandinfo1"
+    "venue"
+    "linkbox"
+    "spotify"
+    "rating-label"
+    "rating";
+}
+
+.card-6-container {
+  padding: 5;
+  grid-area: card-6;
+  display: grid;
+  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-template-areas:
+    "bandimg2"
+    "bandinfo1"
+    "venue"
+    "linkbox"
+    "spotify"
+    "rating-label"
+    "rating";
+}
+
+.card-7-container {
+  padding: 5;
+  grid-area: card-7;
+  display: grid;
+  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-template-areas:
+    "bandimg2"
+    "bandinfo1"
+    "venue"
+    "linkbox"
+    "spotify"
+    "rating-label"
+    "rating";
+}
+
+.card-8-container {
+  padding: 5;
+  grid-area: card-8;
+  display: grid;
+  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-template-areas:
+    "bandimg2"
+    "bandinfo1"
+    "venue"
+    "linkbox"
+    "spotify"
+    "rating-label"
+    "rating";
+}
+
+.card {
   align-items: center;
   background-color: white;
   box-shadow: 0px 1px 3px #14110f;
-  /* border-style: solid;
-  border-width: medium;
-  border-color: #14110f;
-  border-radius: 1%; */
-  grid-area: card-1;
   height: 420px;
   width: auto;
   overflow: hidden;
-  display: grid;
-  grid-template-rows: 200px 30px 30px 1fr 1fr;
-  grid-gap: 4px;
-  grid-template-areas:
-  "band1img"
-  "card-2"
-  "card-3"
-  "card-4"
-  "card-5";
-}
-
-.card-2 {
-  background-color: green;
-  grid-area: card-2;
-  height: 400px;
-}
-.card-3 {
-  background-color: yellow;
-  grid-area: card-3;
-  height: 400px;
-}
-.card-4 {
-  background-color: red;
-  grid-area: card-4;
-  height: 400px;
-}
-.card-5 {
-  background-color: purple;
-  grid-area: card-5;
-  height: 400px;
-}
-.card-6 {
-  background-color: pink;
-  grid-area: card-6;
-  height: 400px;
-}
-.card-7 {
-  background-color: black;
-  grid-area: card-7;
-  height: 400px;
-}
-.card-8 {
-  background-color: cornflowerblue;
-  grid-area: card-8;
-  height: 400px;
 }
 @media screen and (max-width: 450px) {
-  main {
+  .main-container {
     grid-gap: 5px;
     padding: 2;
     width: auto;
