@@ -114,7 +114,7 @@ main {
 
 .band-img-container {
   position: relative;
-  grid-area: bandimg1;
+  /* grid-area: bandimg1; */
   opacity: 75%;
 }
 
@@ -137,34 +137,39 @@ main {
   font-family: avenir;
   position: absolute;
   top: 5px;
-  left: 225px;
+  right: 10px;
 }
 
 .date-year {
   color: #f8f8f8;
   font-family: avenir;
   position: absolute;
-  left: 225px;
-  top: 18px;
+  top: 20px;
+  right: 10px;
   font-size: 20pt;
 }
 
 .band-img {
+  padding: 0;
   height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.bandinfo {
+h1 {
   padding: 0;
   margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   text-decoration: none;
   font-family: avenir;
   font-size: 20pt;
   color: #f28123;
-  grid-area: bandinfo1;
 }
 
-.venue {
+p {
   margin: 10px;
+  margin-top: 0px;
   padding: 0;
   font-family: avenir;
   text-transform: uppercase;
@@ -189,23 +194,27 @@ main {
 .card-1-container {
   padding: 5;
   grid-area: card-1;
-  display: grid;
+  width: 100%;
+  height: 420px;
+  /*display: grid;
   grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
-  grid-gap: 4px;
-  grid-template-areas:
-    "bandimg1"
+  grid-gap: 5px;
+  grid-template-areas: */
+    /* "bandimg1"
     "bandinfo1"
     "venue"
     "linkbox"
     "spotify"
     "rating-label"
-    "rating";
+    "rating"; */
 }
 
 .card-2-container {
   padding: 5;
+  width: 100%;
+  height: 420px;
   grid-area: card-2;
-  display: grid;
+  /*display: grid;
   grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-template-areas:
@@ -215,13 +224,15 @@ main {
     "linkbox"
     "spotify"
     "rating-label"
-    "rating";
+    "rating"; */
 }
 
 .card-3-container {
   padding: 5;
+  width: 100%;
+  height: 420px;
   grid-area: card-3;
-  display: grid;
+  /* display: grid;
   grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-template-areas:
@@ -231,13 +242,15 @@ main {
     "linkbox"
     "spotify"
     "rating-label"
-    "rating";
+    "rating"; */
 }
 
 .card-4-container {
   padding: 5;
+  width: 100%;
+  height: 420px;
   grid-area: card-4;
-  display: grid;
+  /* display: grid;
   grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-template-areas:
@@ -247,13 +260,15 @@ main {
     "linkbox"
     "spotify"
     "rating-label"
-    "rating";
+    "rating"; */
 }
 
 .card-5-container {
   padding: 5;
+  width: 100%;
+  height: 420px;
   grid-area: card-5;
-  display: grid;
+  /* display: grid;
   grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-template-areas:
@@ -263,13 +278,15 @@ main {
     "linkbox"
     "spotify"
     "rating-label"
-    "rating";
+    "rating"; */
 }
 
 .card-6-container {
   padding: 5;
+  width: 100%;
+  height: 420px;
   grid-area: card-6;
-  display: grid;
+  /* display: grid;
   grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-template-areas:
@@ -279,13 +296,15 @@ main {
     "linkbox"
     "spotify"
     "rating-label"
-    "rating";
+    "rating"; */
 }
 
 .card-7-container {
   padding: 5;
   grid-area: card-7;
-  display: grid;
+  width: 100%;
+  height: 420px;
+  /* display: grid;
   grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-template-areas:
@@ -295,13 +314,15 @@ main {
     "linkbox"
     "spotify"
     "rating-label"
-    "rating";
+    "rating"; */
 }
 
 .card-8-container {
   padding: 5;
   grid-area: card-8;
-  display: grid;
+  width: 100%;
+  height: 420px;
+  /* display: grid;
   grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-template-areas:
@@ -311,7 +332,7 @@ main {
     "linkbox"
     "spotify"
     "rating-label"
-    "rating";
+    "rating"; */
 }
 
 .card {
