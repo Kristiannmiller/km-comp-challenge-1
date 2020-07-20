@@ -32,7 +32,7 @@ I will develop my skills in HTML/CSS and get some hands on experience in buildin
 
 7/19: Worked through website responsiveness issues to get mobile view to work. Ran into issues with all other larger breakpoints. Cleaned and dried up code.
 
-## Showcase
+## Showcase ::
 
 <p align="center">Static Comp Original Structure</br>
   <img width="460" height="auto" src="./assets/Static-Comp-1-Original-Design.jpg" alt="Static Comp Original Structure">
