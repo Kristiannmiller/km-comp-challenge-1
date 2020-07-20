@@ -39,7 +39,7 @@ I will develop my skills in HTML/CSS and get some hands on experience in buildin
 </p>
 
 <p align="center">Static Comp Wireframe</br>
-  <img width="460" src="./assets/Static-Comp-wireframe.png" alt="Static Comp Wireframe">
+  <img width="460" height="auto" src="./assets/Static-Comp-Wireframe.png" alt="Static Comp Wireframe">
 </p>
 
 <p align="center">Static Comp Full Page View</br>
