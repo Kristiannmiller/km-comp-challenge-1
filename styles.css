@@ -4,20 +4,6 @@ body {
   background-color: #f8f8f8;
 }
 
-#original-design {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 50%;
-  z-index: 3;
-}
-
-
 header {
   width: 100%;
   overflow: hidden;
@@ -33,10 +19,9 @@ header {
 
 .nav-1 {
   margin: 20px;
-  width: 100%;
   display: inline-block;
   height: 30px;
-  text-align: center;
+  text-align: right;
   grid-column: span 5;
   grid-area: nav-1;
 }
@@ -96,7 +81,6 @@ header {
 
 .username {
   margin-bottom: 0;
-  float: right;
   text-decoration: none;
   font-family: avenir;
   font-size: 10pt;
@@ -219,11 +203,6 @@ p1 {
   color: #14110f;
 }
 
-/* .link-section {
-  text-align: center;
-  vertical-align: middle;
-} */
-
 .linkbox {
   padding: 0;
   width: 100%;
@@ -255,13 +234,11 @@ p1 {
   font-size: 16pt;
   text-decoration: none;
   color: #f28123;
-
 }
 
 .spotify-link {
   padding: 0;
   font-family: avenir;
-  /* text-transform: uppercase; */
   font-size: 16pt;
   text-decoration: none;
   color: #f28123;
@@ -274,17 +251,6 @@ p1 {
   grid-area: card-1;
   width: 100%;
   height: 420px;
-  /*display: grid;
-  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
-  grid-gap: 5px;
-  grid-template-areas: */
-    /* "bandimg1"
-    "bandinfo1"
-    "venue"
-    "linkbox"
-    "spotify"
-    "rating-label"
-    "rating"; */
 }
 
 .card-2-container {
@@ -292,17 +258,6 @@ p1 {
   width: 100%;
   height: 420px;
   grid-area: card-2;
-  /*display: grid;
-  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
-  grid-gap: 4px;
-  grid-template-areas:
-    "bandimg2"
-    "bandinfo1"
-    "venue"
-    "linkbox"
-    "spotify"
-    "rating-label"
-    "rating"; */
 }
 
 .card-3-container {
@@ -310,17 +265,6 @@ p1 {
   width: 100%;
   height: 420px;
   grid-area: card-3;
-  /* display: grid;
-  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
-  grid-gap: 4px;
-  grid-template-areas:
-    "bandimg2"
-    "bandinfo1"
-    "venue"
-    "linkbox"
-    "spotify"
-    "rating-label"
-    "rating"; */
 }
 
 .card-4-container {
@@ -328,17 +272,6 @@ p1 {
   width: 100%;
   height: 420px;
   grid-area: card-4;
-  /* display: grid;
-  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
-  grid-gap: 4px;
-  grid-template-areas:
-    "bandimg1"
-    "bandinfo1"
-    "venue"
-    "linkbox"
-    "spotify"
-    "rating-label"
-    "rating"; */
 }
 
 .card-5-container {
@@ -346,17 +279,6 @@ p1 {
   width: 100%;
   height: 420px;
   grid-area: card-5;
-  /* display: grid;
-  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
-  grid-gap: 4px;
-  grid-template-areas:
-    "bandimg2"
-    "bandinfo1"
-    "venue"
-    "linkbox"
-    "spotify"
-    "rating-label"
-    "rating"; */
 }
 
 .card-6-container {
@@ -364,17 +286,6 @@ p1 {
   width: 100%;
   height: 420px;
   grid-area: card-6;
-  /* display: grid;
-  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
-  grid-gap: 4px;
-  grid-template-areas:
-    "bandimg2"
-    "bandinfo1"
-    "venue"
-    "linkbox"
-    "spotify"
-    "rating-label"
-    "rating"; */
 }
 
 .card-7-container {
@@ -382,17 +293,6 @@ p1 {
   grid-area: card-7;
   width: 100%;
   height: 420px;
-  /* display: grid;
-  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
-  grid-gap: 4px;
-  grid-template-areas:
-    "bandimg2"
-    "bandinfo1"
-    "venue"
-    "linkbox"
-    "spotify"
-    "rating-label"
-    "rating"; */
 }
 
 .card-8-container {
@@ -400,21 +300,9 @@ p1 {
   grid-area: card-8;
   width: 100%;
   height: 420px;
-  /* display: grid;
-  grid-template-rows: 200px 30px 30px 1fr 1fr 1fr 1fr;
-  grid-gap: 4px;
-  grid-template-areas:
-    "bandimg2"
-    "bandinfo1"
-    "venue"
-    "linkbox"
-    "spotify"
-    "rating-label"
-    "rating"; */
 }
 
 .card {
-  align-items: center;
   background-color: white;
   box-shadow: 0px 1px 3px #14110f;
   height: 420px;
@@ -430,18 +318,16 @@ p1 {
     display: inline-block;
     height: auto;
     float: left;
-    grid-column: span 1;
-    grid-area: nav-1;
   }
 
   .main-logo {
-    margin-right: 0px;
+    margin-top: 3px;
+    margin-right: 3px;
     margin-bottom: 0;
     padding: 0;
     height: 50px;
     width: auto;
     float: none;
-    opacity: 75%;
   }
 
   .nav-2 {
@@ -449,40 +335,27 @@ p1 {
     margin-top: 0;
     display: inline-block;
     height: 30px;
-    text-align: center;
-    grid-column: span 1;
-    grid-area: nav-2;
   }
 
   .nav-3 {
     width: 100%;
     margin-top: 0;
-    display: inline-block;
-    height: 30px;
-    text-align: center;
     grid-column: span 1;
-    grid-area: nav-3;
   }
+
   .nav-4 {
     width: 100%;
     margin-top: 0;
     margin-bottom: 10px;
-    grid-area: nav-4;
   }
+
   #navmenu {
     margin: 10px;
-    text-decoration: none;
-    font-family: avenir;
-    text-transform: uppercase;
     font-size: 10pt;
-    color: #f8f8f8;
   }
 
   header {
-    width: 100%;
-    overflow: hidden;
     height: 130px;
-    background-color: #14110f;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -490,7 +363,6 @@ p1 {
       "nav-2 nav-3"
       "nav-4 nav-4"
   }
-
 
   .main-container {
     grid-gap: 5px;
