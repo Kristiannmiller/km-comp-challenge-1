@@ -1,0 +1,384 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  height: 160px;
+  background-color: #14110f;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "nav-1 nav-1 nav-1 nav-1 nav-1"
+    "nav-2 nav-3 nav-4 nav-5 nav-5"
+}
+
+.nav-1 {
+  margin: 20px;
+  display: inline-block;
+  height: 30px;
+  text-align: right;
+  grid-column: span 5;
+  grid-area: nav-1;
+}
+
+.nav-2 {
+  width: 100%;
+  margin-top: 10%;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+  grid-column: span 1;
+  grid-area: nav-2;
+}
+
+.nav-3 {
+  width: 100%;
+  margin-top: 10%;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+  grid-column: span 1;
+  grid-area: nav-3;
+}
+.nav-4 {
+  width: 100%;
+  margin-top: 10%;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+  grid-column: span 1;
+  grid-area: nav-4;
+}
+.nav-5 {
+  grid-column: span 2;
+  grid-area: nav-5;
+}
+
+#navmenu {
+  margin: 30px 50px 50px 75px;
+  text-decoration: none;
+  font-family: avenir;
+  text-transform: uppercase;
+  font-size: 14pt;
+  color: #f8f8f8;
+}
+
+#text1 {
+  height: 10px;
+  margin: 18px 10px 50px 16px;
+  text-decoration: none;
+  font-family: avenir;
+  font-size: 28pt;
+  color: #f28123;
+  grid-column: span 4;
+  grid-area: text;
+}
+
+.username {
+  margin-bottom: 0;
+  text-decoration: none;
+  font-family: avenir;
+  font-size: 10pt;
+  color: #f8f8f8;
+  grid-area: user;
+}
+
+.main-logo {
+  margin-right: 20px;
+  margin-bottom: 70px;
+  padding: 0;
+  height: 75px;
+  float: right;
+  grid-area: logo;
+  opacity: 75%;
+}
+main {
+  width: auto;
+  background-color: #f8f8f8;
+}
+
+.main-container {
+  margin: 15px 15px 15px 15px;
+  display: grid;
+  width: 95%;
+  height: 955px;
+  grid-template-rows: 10% 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
+  grid-template-areas:
+    "text text text text"
+    "card-1 card-2 card-3 card-4"
+    "card-5 card-6 card-7 card-8";
+}
+
+.band-img-container {
+  position: relative;
+  /* grid-area: bandimg1; */
+  opacity: 75%;
+}
+
+.arrow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: auto;
+  opacity: 75%;
+  z-index: 0;
+  background-color: white;
+  border-style: solid;
+  border-radius: 360%;
+  border-color: white;
+}
+
+.date {
+  color: #f8f8f8;
+  font-family: avenir;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.date-year {
+  color: #f8f8f8;
+  font-family: avenir;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 20pt;
+}
+
+.band-img {
+  padding: 0;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  padding: 0;
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-decoration: none;
+  font-family: avenir;
+  font-size: 20pt;
+  color: #f28123;
+}
+
+h2 {
+  padding: 0;
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-decoration: none;
+  font-family: avenir;
+  font-size: 16pt;
+  color: #f28123;
+}
+
+p {
+  margin: 10px;
+  margin-top: 0px;
+  padding: 0;
+  font-family: avenir;
+  text-transform: uppercase;
+  font-size: 10pt;
+  color: #14110f;
+}
+
+p1 {
+  margin-left: 10px;
+  margin-bottom: 1px;
+  padding: 0;
+  text-decoration: none;
+  font-family: avenir;
+  text-transform: uppercase;
+  font-size: 10pt;
+  color: #14110f;
+}
+
+.linkbox {
+  padding: 0;
+  width: 100%;
+  height: 2em;
+  background-color: #847e89;
+  position: center;
+  margin: center;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #14110f;
+  text-align: center;
+  font-family: avenir;
+  display: inline-block;
+  line-height: 2em;
+}
+
+.spotify-link-container {
+  width: 100%;
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+}
+
+.spotify-logo {
+  width: 18px;
+  margin-right: 5px;
+  padding: 0;
+  font-family: avenir;
+  font-size: 16pt;
+  text-decoration: none;
+  color: #f28123;
+}
+
+.spotify-link {
+  padding: 0;
+  font-family: avenir;
+  font-size: 16pt;
+  text-decoration: none;
+  color: #f28123;
+  line-height: 20px;
+  align-items: baseline;
+}
+
+.card-1-container {
+  padding: 5;
+  grid-area: card-1;
+  width: 100%;
+  height: 420px;
+}
+
+.card-2-container {
+  padding: 5;
+  width: 100%;
+  height: 420px;
+  grid-area: card-2;
+}
+
+.card-3-container {
+  padding: 5;
+  width: 100%;
+  height: 420px;
+  grid-area: card-3;
+}
+
+.card-4-container {
+  padding: 5;
+  width: 100%;
+  height: 420px;
+  grid-area: card-4;
+}
+
+.card-5-container {
+  padding: 5;
+  width: 100%;
+  height: 420px;
+  grid-area: card-5;
+}
+
+.card-6-container {
+  padding: 5;
+  width: 100%;
+  height: 420px;
+  grid-area: card-6;
+}
+
+.card-7-container {
+  padding: 5;
+  grid-area: card-7;
+  width: 100%;
+  height: 420px;
+}
+
+.card-8-container {
+  padding: 5;
+  grid-area: card-8;
+  width: 100%;
+  height: 420px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0px 1px 3px #14110f;
+  height: 420px;
+  width: auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 450px) {
+
+  .nav-1 {
+    margin-top: 5px;
+    width: 75px;
+    display: inline-block;
+    height: auto;
+    float: left;
+  }
+
+  .main-logo {
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-bottom: 0;
+    padding: 0;
+    height: 50px;
+    width: auto;
+    float: none;
+  }
+
+  .nav-2 {
+    width: 100%;
+    margin-top: 0;
+    display: inline-block;
+    height: 30px;
+  }
+
+  .nav-3 {
+    width: 100%;
+    margin-top: 0;
+    grid-column: span 1;
+  }
+
+  .nav-4 {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #navmenu {
+    margin: 10px;
+    font-size: 10pt;
+  }
+
+  header {
+    height: 130px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "nav-1 nav-5"
+      "nav-2 nav-3"
+      "nav-4 nav-4"
+  }
+
+  .main-container {
+    grid-gap: 5px;
+    padding: 2;
+    width: auto;
+    margin: auto;
+    grid-template-areas:
+      "text"
+      "card-1"
+      "card-2"
+      "card-3"
+      "card-4"
+      "card-5"
+      "card-6"
+      "card-7"
+      "card-8";
+    grid-template-columns: 1fr;
+  }
+}
